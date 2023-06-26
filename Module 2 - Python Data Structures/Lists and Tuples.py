@@ -10,7 +10,7 @@ print(len(tuple2))
 tuple3=(11, 993.019,-113,-139821.2232)
 print(sorted(tuple3))
 #Tuple: nesting
-tuple4=(1,2,("Shafaa","Dimitri"),3.2)
+tuple4=(1,2,("Sesa","Dimitri"),3.2)
 print(len(tuple4))
 print(tuple4[2])
 print(tuple4[2][1])
