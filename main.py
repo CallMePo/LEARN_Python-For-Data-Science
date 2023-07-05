@@ -1,16 +1,8 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import pyfiglet
+#import random
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#font=random.choice(pyfiglet.FigletFont.getFonts())
+ascii_art=pyfiglet.figlet_format("Eid-ul-Adha", font="big")
+greeting=f"{ascii_art}\nEid-ul-Adha Mubarak!\n {ascii_art}"
+print(greeting)
