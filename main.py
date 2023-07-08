@@ -1,8 +1,12 @@
-import pyfiglet
-#import random
+import yfinance as yf
+import matplotlib.pyplot as plt
 
+ticker = input("Name of Stock: ")
+data = yf.download(ticker, start="2021-01-01", end="2023-03-03")
 
-#font=random.choice(pyfiglet.FigletFont.getFonts())
-ascii_art=pyfiglet.figlet_format("Eid-ul-Adha", font="big")
-greeting=f"{ascii_art}\nEid-ul-Adha Mubarak!\n {ascii_art}"
-print(greeting)
+plt.figure(figsize=(10, 5))
+plt.plot(data["Close"])
+plt.title(f"{ticker} Stock Chart")
+plt.xlabel("Date")
+plt.ylabel("Price (INR)")
+plt.show()
