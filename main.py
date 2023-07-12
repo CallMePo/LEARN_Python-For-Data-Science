@@ -1,12 +1,14 @@
-import yfinance as yf
-import matplotlib.pyplot as plt
+def outer_func(x, y):
+    x = 4
 
-ticker = input("Name of Stock: ")
-data = yf.download(ticker, start="2021-01-01", end="2023-03-03")
+    def inner_func():
+        nonlocal x
+        x += 2
+        return y
 
-plt.figure(figsize=(10, 5))
-plt.plot(data["Close"])
-plt.title(f"{ticker} Stock Chart")
-plt.xlabel("Date")
-plt.ylabel("Price (INR)")
-plt.show()
+    return inner_func()
+
+
+a = 3
+b = 2
+print(outer_func(a, b))
