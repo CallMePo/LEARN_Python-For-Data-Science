@@ -1,5 +1,5 @@
 with open("example.txt",'w') as file:# 'w' for write, 'r' for read
-    file_stuff=file.write("Shafaa Dimitri Azalea\nShadim")
+    file_stuff=file.write("Shafaa Dimitri Azalea\n Shadim\n sesa")
 with open("example.txt", 'r')as file2:
     file_stuff2=file2.read()
     print(file_stuff2)
