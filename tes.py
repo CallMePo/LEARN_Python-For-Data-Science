@@ -1,5 +1,10 @@
-import pandas as pd
+class Points(object):
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+        def print_point(self):
+            print('x=',self.x,' y=',self.y)
 
-csv_path = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%204/data/TopSellingAlbums.csv'
-df = pd.read_csv(csv_path)
-print(df.head())
+p1=Points(1,2)
+
+print(p1)
